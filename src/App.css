@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+#parent {
+  padding: 5% 0;
+  height: 100%;
+}
+#child {
+  padding: 10% 0;
+}
+
+label {
+  font-size: 60px;
+}
+
+.input-name {
+  border-bottom: medium;
+  border-color: aqua;
+}
+
