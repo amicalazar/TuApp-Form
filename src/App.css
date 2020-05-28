@@ -7,6 +7,7 @@
 }
 #child {
   padding: 10% 0;
+  height: 100vh;
 }
 
 label {
@@ -38,4 +39,8 @@ input:focus, input.form-control:focus {
 
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: #A0E8AF;
+}
+
+#dataenter {
+  margin-left: 8rem;
 }

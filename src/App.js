@@ -1,9 +1,13 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Container, Col, Row, Form } from 'react-bootstrap';
+import { Container, Col, Row, Form} from 'react-bootstrap';
 import InputText from './components/InputText'
 import Label from './components/Label'
+import Titulo from './components/Titulo'
+import Contador from './components/Contador'
+import Boton from './components/Boton'
+
 
 
 
@@ -24,20 +28,50 @@ import Label from './components/Label'
 
 
 function App() {
+
+  const size = 1
+
   return (
 
-  <Container className="fluid" id="parent">
+    <Container fluid>
     <Row>
       <Col>
-        <Form id="child">
-          <Form.Group controlId="formBasicEmail">
-            <Label />
-            <InputText />
-            <Button variant="primary" type="submit">
-            Submit
-          </Button>
-          </Form.Group>
-        </Form>
+        <Titulo/>
+      </Col>
+      <Col>
+        <Contador/>
+      </Col>
+    </Row>
+    <Row>
+      <Col>
+        <Container fluid >
+          <Form id="child" className="ml-2">
+            <Row>
+              <Col xs={2}>
+              </Col>
+              <Col xs={9}>
+                <Form.Group controlId="formBasicEmail">
+                  <Label />
+                  <InputText />
+              </Form.Group>
+              </Col>
+              <Col xs={size}>
+                Avance
+              </Col>
+            </Row>
+            <Row id="child">
+              <Col xs={11}>
+
+              </Col>
+              <Col xs={1} >
+                  <Boton />
+              </Col>
+              
+              
+            </Row>
+            
+          </Form>
+        </Container>
 
       </Col>
     </Row>

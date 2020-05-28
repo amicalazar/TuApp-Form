@@ -3,10 +3,10 @@ import {Animated} from "react-animated-css";
 
 
 
-const Label = () => {
+const Label = ({font}) => {
     return ( 
         <Animated animationIn="slideInDown" animationOut="slideOutDown" isVisible={true} animationInDuration="400" >
-            <label>Email address</label>
+            <label style={{fontSize: {font}}}>Email address</label>
         </Animated>
      );
 }
