@@ -5,10 +5,10 @@ const Campo = styled.div`
     padding-right: 1rem;
 `;
 
-const Contador = () => {
+const Contador = (isTabletOrMobile) => {
     return ( 
-        <Campo className="row justify-content-end">
-            <h1>TuApp</h1>
+        <Campo className="row justify-content-end" >
+            <h1 style={ isTabletOrMobile ? { fontSize:'30px'} : {fontSize:'50px'}}>TuApp</h1>
         </Campo>
      );
 }

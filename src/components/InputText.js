@@ -9,14 +9,13 @@ const InputData = styled.input`
     border-top: none;
     border-left: none;
     border-right: none;
-    font-size:50px;
     color: #FFD23F;
 `;
 
-const InputText = () => {
+const InputText = (isTabletOrMobile, step) => {
     return ( 
-        <Animated animationIn="slideInDown" animationOut="slideOutDown" isVisible={true} animationInDuration="400">
-            <InputData type="email" placeholder="Enter email" />
+        <Animated animationIn="slideInDown" animationOut="slideOutDown" isVisible={step} animationInDuration="400">
+            <InputData type="email" placeholder="Enter email" style={ isTabletOrMobile ? { fontSize:'30px'} : {fontSize:'50px'}}/>
         </Animated>
      );
 }

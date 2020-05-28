@@ -14,7 +14,10 @@ const DivBoton = styled.div`
 const Boton = () => {
     return ( 
         <DivBoton>
-            <Button variant="primary" type="submit">
+            <Button 
+                variant="primary" 
+                type="submit"
+                >
                 Submit
             </Button>
         </DivBoton>
