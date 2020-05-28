@@ -7,11 +7,26 @@ import Label from './components/Label'
 
 
 
+//Colors
+/* HEX */
+// $color1: #ffa69eff; Fondo
+// $color2: #faf3ddff;
+// $color3: #b8f2e6ff;
+// $color4: #fcefefff;
+// $color5: #ff6978ff; Fuerte
+
+/* HEX */
+// $color1: #6BBAA7; Fondo
+// $color2: #faf3ddff;
+// $color3: #b8f2e6ff;
+// $color4: #fcefefff;
+// $color5: #ff6978ff; Fuerte
+
 
 function App() {
   return (
 
-  <Container id="parent">
+  <Container className="fluid" id="parent">
     <Row>
       <Col>
         <Form id="child">
